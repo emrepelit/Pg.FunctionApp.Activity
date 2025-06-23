@@ -1,0 +1,25 @@
+[
+  {
+    "name": "ActivityServiceBusListener",
+    "scriptFile": "Pg.FunctionApp.Activity.dll",
+    "entryPoint": "Pg.FunctionApp.Activity.Functions.ServiceBusListeners.ActivityServiceBusListener.Run",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "message",
+        "direction": "In",
+        "type": "serviceBusTrigger",
+        "topicName": "activity",
+        "subscriptionName": "PgSubscription",
+        "connection": "PgConnectionString",
+        "cardinality": "One",
+        "properties": {
+          "supportsDeferredBinding": "True"
+        }
+      }
+    ]
+  }
+]

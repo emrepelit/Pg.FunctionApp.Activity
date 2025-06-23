@@ -1,0 +1,10 @@
+{
+  "description": {
+    "language": "dotnet-isolated",
+    "extensions": [ ".dll" ],
+    "defaultExecutablePath": "dotnet",
+    "defaultWorkerPath": "Pg.FunctionApp.Activity.Test.dll",
+    "workerIndexing": "true",
+    "canUsePlaceholder": true
+  }
+}
